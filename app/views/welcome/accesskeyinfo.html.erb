@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Oval Ski Club | Access Keys</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+<!-- this imports my custom css file and sets the padding of the body section -->
+    <link href="app/assets/stylesheets/mycustomcss.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <!-- this includes the responsive bootstrap styles to allow the website to scale accordingly to screen size -->
+    <link href="app/assets/stylesheets/bootstrap-responsive.css" rel="stylesheet">   
+
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="icon" type="image/ico" href="assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+ <!-- this is my code for the navbar it contains all the links and information needed to navigate through the page -->
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.html" title="Return to Home Page">Oval Ski Club</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="index.html" title="Home Page" accesskey="h"> <i class="icon-home icon-inverse"></i> <em>H</em>ome</a></li>
+              <li><a href="about.html" title="About Us" accesskey="a"><em>A</em>bout</a></li>
+            <!--<li><a href="contact.html" accesskey="1" title="Contact Us" >Get In Touch!</a></li> -->
+              <li><a href="../newevents" title="Social Events & Club Holiday" accesskey="s">Get <em>S</em>ocial!</a></li>
+              </li>
+               <li class="dropdown">
+                <a  href="#" class="dropdown-toggle" data-toggle="dropdown" accesskey="i" title="FAQ & Information">FAQ & <em>I</em>nformation <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="faq.html" title="FAQ Page" accesskey="q" >FA<em>Q</em>s</a></li>
+                  <li><a href="clubsessions.html" title="Information on the sessions we run!" accesskey="c"><em>C</em>lub Sessions</a></li>
+                  <li><a href="racingteam.html" title="Our superb racing team!" accesskey="o"><em>O</em>ur Racing Team</a></li>
+                  <li class="divider"></li>
+                  <li class="active"><a href="accesskeyinfo.html" title="Information on how to use access keys" accesskey="l"><em>L</em>ist of Access Keys</a></li>
+                  </ul>
+            </ul>
+           <ul class="nav pull-right">
+          <li class="divider-vertical"></li>
+          <li><a href="../login" title="Login"accesskey="l"><em>L</em>ogin</a></li>
+         
+            
+           <li><a href="../authors/new" title="Resgister"accesskey="r"><em>R</em>egister</a></li>
+           
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+                
+     
+   
+
+<div class="page-header">
+      <h1>Access Keys</h1>
+      <hr>
+    </div>
+    
+
+<!-- this section of code declares a document section to display the list of access keys for use on the page -->
+    <div id="head-section" class="row">
+      <div class="span3">
+        <h2>List of Access Keys</h2>
+        <p>To the right is a list of access keys which allow you to navigate through the webpage without using the mouse.</p>
+
+        <h3>How To Use</h3>
+        <p>To use the access keys, please follow instructions below:</p>
+          <ol>
+            <li>Hold down the "alt" key on the keyboard or ctrl+alt on a mac</li>
+            <li>Press the corrisponding key on the keyboard to open the page</li>
+            
+          </ol>
+       
+      </div><!-- .span -->
+      <div class="span9">
+  <pre>Access Key List
+Home Page: alt+h or ctrl+alt+h (on a mac)
+About: alt+a or ctrl+alt+a (on a mac)
+Get Social: alt+s or ctrl+alt+s (on a mac)
+
+FAQ and Information dropdown: alt+i or ctrl+alt+i
+          FAQ: alt+i, alt+q or ctrl+alt+i, ctrl+alt+q
+          Club Sessions: alt+i, alt+c or ctrl+alt+i, ctrl+alt+c
+          Racing Team: alt+i, alt+o or ctrl+alt+i, ctrl+alt+o
+          Access Keys: alt+i, alt+l or ctrl+alt+i, ctrl+alt+l
+
+</pre>
+
+  
+
+
+
+
+          </div>
+      </div>
+
+        <ul class="breadcrumb">
+          <li><a href="index.html" title="Return to Home Page">Home</a> <span class="divider">/</span></li>
+          <li class="disabled"><a href="faq.html">FAQ & Information</a> <span class="divider">/</span></li>
+          <li class="disabled"><a href="clubsessions.html">FAQ & Information</a> <span class="divider">/</span></li>
+          <li class="disabled"><a href="racinteam.html">FAQ & Information</a> <span class="divider">/</span></li>
+          <li class="active">Access Keys</li>
+      </ul>
+
+   
+
+    </div> <!-- /container -->
+
+
+
+   <script text/javascript src="../assets/jquery-1.8.2.min.js"></script>
+    <script text/javascript src="../assets/bootstrap.min.js"></script>
+    <script text/javascript src="assets/js/jquery-1.8.2.min.js"></script>
+    <script text/javascript src="assets/js/bootstrap.min.js"></script>
+<script>
+   $(function(){
+      $('.dropdown-toggle').dropdown();
+    $('.dropdown input, .dropdown label').click(function (e) {
+        e.stopPropagation();
+      });
+  });
+   </script>
+
+<%= yield %>
+
+</body>
+</html>

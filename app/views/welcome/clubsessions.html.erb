@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Oval Ski Club | Club Sessions</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+<!-- this imports my custom css file and sets the padding of the body section -->
+    <link href="app/assets/stylesheets/mycustomcss.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <!-- this includes the responsive bootstrap styles to allow the website to scale accordingly to screen size -->
+    <link href="app/assets/stylesheets/bootstrap-responsive.css" rel="stylesheet">   
+
+<!-- Le fav and touch icons -->
+    <link rel="icon" type="image/ico" href="assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+ <!-- this is my code for the navbar it contains all the links and information needed to navigate through the page -->
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.html" title="Return to Home Page">Oval Ski Club</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="index.html" title="Home Page" accesskey="h"> <i class="icon-home icon-inversed"></i> <em>H</em>ome</a></li>
+              <li><a href="about.html" title="About Us" accesskey="a"><em>A</em>bout</a></li>
+           <!--<li><a href="contact.html" accesskey="1" title="Contact Us" >Get In Touch!</a></li> -->
+              <li><a href="../newevents" title="Social Events & Club Holiday" accesskey="s">Get <em>S</em>ocial!</a></li>
+              </li>
+               <li class="dropdown">
+                <a  href="#" class="dropdown-toggle" data-toggle="dropdown" accesskey="i" title="FAQ & Information">FAQ & <em>I</em>nformation <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="faq.html" title="FAQ Page" accesskey="q" >FA<em>Q</em>s</a></li>
+                  <li class="active"><a href="clubsessions.html" title="Information about the sessions we run!" accesskey="c"><em>C</em>lub Sessions</a></li>
+                  <li><a href="racingteam.html" title="Our superb racing team!" accesskey="o"><em>O</em>ur Racing Team</a></li>
+                  <li class="divider"></li>
+                  <li><a href="accesskeyinfo.html" title="Information on how to use access keys" title="" accesskey="l"><em>L</em>ist of Access Keys</a></li>
+                  </ul>
+            </ul>
+             <ul class="nav pull-right">
+          <li class="divider-vertical"></li>
+          <li><a href="../login" title="Login"accesskey="l"><em>L</em>ogin</a></li>
+         
+            
+           <li><a href="../authors/new" title="Resgister"accesskey="r"><em>R</em>egister</a></li>
+           
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      
+     <!-- Page Header -->
+      <div class="container">
+    <div class="page-header">
+      <h1>Club Session Information</h1>
+      <hr>
+    </div>
+    <p>The club holds sessions for both Juniors and Adults and covers the full spectrum of ability, from first timers to seasoned racers.
+       Everyone is welcome to join the club to ski. If you are a beginner then please check the diary for the start date of the next set of beginners lessons.</p>
+
+       <p>As we are a members only club everyone must join prior to skiing (see costs below). This only takes a few minutes and can be done at your first visit. Please remember that we are a voluntary, none profit making organisation, so all money raised through membership is used for equipment, instructor training etc so everyone benefits. You will also receive discounts from various local sports shops.</p>
+             
+        </div>
+        <!-- this declares my hover style table for display of membership prices -->
+        <div class="span8">
+          <h3>Annual Membership Fees</h3>
+          <table class="table table-hover" title="Our Membership Prices">
+
+             <tr>
+          <th>Membership Type</th>
+          <th>Price</th>
+          
+        </tr>
+
+            <tr>
+              <td>Junior Membership</td>
+              <td>£7.00</td>
+
+
+              </tr>
+            <tr>
+              <td>Senior Membership</td>
+              <td>£15.00</td>
+              </tr>
+            <tr>
+              <td>Family Membership</td>
+              <td>£30.00</td>
+
+
+              </tr>
+
+            </table>
+             <p class="alert alert-error">PLEASE NOTE: Membership requires renewal at the start of each season in September, Joining is simple: just go down to the ski hut during session hours and speak to any one of the committee members or helpers.</p>
+
+            <p>
+
+       </div>
+       <!-- this declares my hover table for session times and dates -->
+        <div class="span10">
+          <h4>Session Times</h4>
+
+          <table class="table table-hover" title="Session times and days">
+                 <tr>
+          <th>Day</th>
+          <th>Date</th>
+          <th>Time Slot</th>
+          <th>Age Range</th>
+          
+        </tr>
+            <tr>
+             <td>Saturday</td>
+             <td>13/10/2012</td>
+             <td>10:00am-11:00am</td>
+             <td>Juniors under 11</td>
+            </tr>
+            <tr>
+             <td>Saturday</td>
+             <td>13/10/2012</td>
+             <td>11:30am-1:00pm</td>
+             <td>Juniors 11-18</td>
+            </tr>
+            <tr>
+             <td>Sunday</td>
+             <td>14/10/2012</td>
+             <td>5:00pm-6:00pm</td>
+             <td>Adults</td>
+            </tr>
+            <tr>
+             <td>Saturday</td>
+             <td>03/11/2012</td>
+             <td>10:00am-11:00am</td>
+             <td>Juniors under 11</td>
+            </tr>
+            <tr>
+             <td>Saturday</td>
+             <td>03/11/2012</td>
+             <td>11:30am-1:00pm</td>
+             <td>Juniors 11-18</td>
+            </tr>
+            <tr>
+             <td>Sunday</td>
+             <td>04/11/2012</td>
+             <td>5:00pm-6:00pm</td>
+             <td>Adults</td>
+            </tr>
+            <tr>
+             <td>Saturday</td>
+             <td>24/11/2012</td>
+             <td>10:00am-11:00am</td>
+             <td>Juniors Under 11</td>
+            </tr>
+            <tr>
+             <td>Saturday</td>
+             <td>24/10/2012</td>
+             <td>11:30am-1:00pm</td>
+             <td>Juniors 11-18</td>
+            </tr>
+            <tr>
+             <td>Sunday</td>
+             <td>25/11/2012</td>
+             <td>5:00pm-6:00pm</td>
+            <td>Adults</td>
+          </tr>
+        </table> 
+      </p>
+         <h4>Junior Club Times</h4>
+       <p>Junior Club (5+ to under 18's) - Saturday Morning 10.00am-1.00pm<br>
+        10.00am-11.00am(5+ to under 11's)<br>
+        11.30-1.00pm(11+)<br>
+        <br>
+        Cost: £5.00 per person (£2 if you use own equipment)</p>
+
+        <h4>Adult Club Times</h4>
+       <p>5.00pm-6.00pm (beginners)<br>
+        6.00pm-7.00pm (Open Skiing Session)<br>
+        7.00pm-8.00pm (Improvers/Advanced Lesson)<br>
+        Occasionally we run family sessions so adults and kids can ski together.<br>
+        All skiers must be able to turn and stop safely to ski during these<br>
+        sessions. The dates will be advertised in the ski hut on the notice board<br>
+        and frequency will depend on demand.<br>
+        Note that during these sessions there will be no instruction.<br>
+        <br>
+        Cost: £5.00 per person (£2 if you use own equipment)</p>
+          
+         <ul class="breadcrumb">
+          <li><a href="index.html" title="Return to Home Page">Home</a> <span class="divider">/</span></li>
+          <li class="disabled"><a href="faq.html">FAQ & Information</a> <span class="divider">/</span></li>
+          <li class="active">Club Sessions</li>
+        </ul>
+
+
+
+
+
+     
+
+        <!-- this places a footer at the bottom of the page, it contains the "Copyright" and the Connect to facebook link -->
+     
+
+
+    
+  </div>
+</div>
+
+
+   <script text/javascript src="../assets/jquery-1.8.2.min.js"></script>
+    <script text/javascript src="../assets/bootstrap.min.js"></script>
+    <script text/javascript src="assets/js/jquery-1.8.2.min.js"></script>
+    <script text/javascript src="assets/js/bootstrap.min.js"></script>
+<script>
+   $(function(){
+      $('.dropdown-toggle').dropdown();
+    $('.dropdown input, .dropdown label').click(function (e) {
+        e.stopPropagation();
+      });
+  });
+   </script>
+
+<%= yield %>
+
+</body>
+</html>

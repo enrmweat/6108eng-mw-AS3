@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Oval Ski Club | Club Holiday</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+<!-- this imports my custom css file and sets the padding of the body section -->
+    <link href="app/assets/stylesheets/mycustomcss.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <!-- this includes the responsive bootstrap styles to allow the website to scale accordingly to screen size -->
+    <link href="app/assets/stylesheets/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- favicon and icon images -->
+    <link rel="icon" type="image/ico" href="assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+ <!-- this is my code for the navbar it contains all the links and information needed to navigate through the page -->
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.html" title="Return to Home Page">Oval Ski Club</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="index.html" title="Home Page" accesskey="h"> <i class="icon-home icon-inversed"></i> <em>H</em>ome</a></li>
+              <li><a href="about.html" title="About Us" accesskey="a"><em>A</em>bout</a></li>
+              <!--<li><a href="contact.html" accesskey="1" title="Contact Us" >Get In Touch!</a></li> -->
+              <li class="active"><a href="club_holiday.html" title="Social Events & Club Holiday" accesskey="s">Get <em>S</em>ocial!</a></li>
+             
+            
+             
+              </li>
+               <li class="dropdown">
+                <a  href="#" class="dropdown-toggle" data-toggle="dropdown" accesskey="i" title="FAQ & Information">FAQ & <em>I</em>nformation <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="faq.html" title="FAQ Page" accesskey="q" >FA<em>Q</em>s</a></li>
+                  <li><a href="clubsessions.html" title="Information on the sessions we run!" accesskey="c"><em>C</em>lub Sessions</a></li>
+                  <li><a href="racingteam.html" title="Our superb Racing Team!" accesskey="o"><em>O</em>ur Racing Team</a></li>
+                  <li class="divider"></li>
+                  <li><a href="accesskeyinfo.html" title="Information on how to use access keys" accesskey="l"><em>L</em>ist of Access Keys</a></li>
+                  </ul>
+            </ul>
+            <form class="navbar-form pull-right" action="index.html">
+              <input class="span2" type="text" title="Please Enter Your Email Address" placeholder="Email">
+              <input class="span2" type="password" title="Please Enter your Password" placeholder="Password">
+              <button <input type="submit" value="Submit" title="Sign In">Sign in</button>
+            </form>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+            <!-- weather widget -->
+            <div class="pull-right" title="Live Weather in St Anton, courtesy of www.booked.net" id="m-booked-bl-simple-35377">
+            <div align="right" title="weather widget">
+            </div> 
+            <div class="weather-160" style="background-color: #626f7d;">
+            <div class="booked-bl-simple-main">
+            <div class="booked-bl-simple-weather wmed18">
+            <div class="booked-bl-simple-degree">
+            <div class="booked-bl-simple-degree-value booked-bl-simple-degree-C"><span class="plus">+</span>11</div>
+            <div class="booked-bl-simple-degree-day"> <div class="booked-bl-simple-day-d"><span class="plus">+</span>12&deg;</div>
+            <div class="booked-bl-simple-night-d"><span class="plus">+</span>7&deg;</div>
+            </div>
+            </div>
+            <a href="http://www.booked.net/weather/sankt-anton-am-arlberg-30089" class="booked-bl-simple-city smolest-min">Sankt Anton am Arlberg</a>
+            <div class="booked-bl-simple-date">Tuesday, 09</div>
+            </div>
+            <div class="booked-bl-simple-see10"> <a href="http://www.booked.net/weather/sankt-anton-am-arlberg-30089">See 7-Day Forecast</a>
+            </div>
+            </div>
+            </div>
+            <div class="bookew-weather-copy" id="bookew-weather-copy-1"></div>
+            </div>
+            <script type="text/javascript"> var css_file=document.createElement("link");
+                    css_file.setAttribute("rel","stylesheet");
+                    css_file.setAttribute("type","text/css");
+                    css_file.setAttribute("href",'http://s.bookcdn.com/css/weather.css?v=0.0.1'); document.getElementsByTagName("head")[0].appendChild(css_file);
+                    function setWidgetData(data) { if(typeof(data) != 'undefined' && data.results.length > 0) { for(var i = 0; i < data.results.length; ++i) { var objMainBlock = document.getElementById('m-booked-bl-simple-35377'); if(objMainBlock !== null) { var copyBlock = document.getElementById('m-bookew-weather-copy-'+data.results[i].widget_type); objMainBlock.innerHTML = data.results[i].html_code; if(copyBlock !== null) objMainBlock.appendChild(copyBlock); } } } else { alert('data=undefined||data.results is empty'); } } </script> <script type="text/javascript" charset="UTF-8" src="http://www.booked.net/?page=get_weather_info&       action=get_weather_info&ver=3&cityID=30089&type=1&scode=9068&ltid=3458&domid=w209&cmetric=1&wlangID=1&color=626f7d&wwidth=250&header_color=ffffff&text_color=333333&link_color=08488D&border_form=1&footer_color=ffffff&footer_text_color=333333&transparent=0"></script><!-- weather widget -->
+          
+     
+      
+      <br>
+      <br>
+          <div class="container">
+      <div class="page-header">
+        <h1>Club Holiday</h1>
+      </div>
+      <hr>
+<!--this is the code for my carousel -->
+<div id="this-carousel-id" class="carousel slide"><!-- class of slide for animation -->
+  <div class="carousel-inner">
+    <div class="item active"><!-- class of active since it's the first item -->
+      <img src="../assets/stchristoph.jpg" />
+      <div class="carousel-caption">
+        <p>St Christoph/St Anton</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="../assets/stchristoph1.jpg" />
+      <div class="carousel-caption">
+        <p>St Christoph/St Anton</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="../assets/stchristoph2.jpg" />
+      <div class="carousel-caption">
+           <p>St Christoph/St Anton</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="../assets/stchristoph3.jpg" />
+      <div class="carousel-caption">
+          <p>St Christoph/St Anton</p>
+      </div>
+    </div>
+  </div><!-- /.carousel-inner -->
+  <!--  Next and Previous controls below
+        href values must reference the id for this carousel -->
+    <a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
+    </div><!-- /.
+      <!-- end carousel -->
+
+
+         
+      
+      <div class="row">
+        <div class="span8">
+          <p>Each season the club organises a holiday to one of the popular resorts in Europe. The holiday is arranged over the Easter break making it available to all club members. The group size varies each year, based on flight availability and what the demand is expected to be, and can be anything from 50 - 100 people.
+
+        Details of this seasons holiday are shown below.
+         </p>
+          
+        </div>
+
+          <div class="span12">
+          <h3>St.Christoph/St.Anton, Austria Saturday 23rd March - 30th March 2013</h3>
+          <p>Download the Holiday Brochure here:<a href="brochure2013.pdf" title="Download holiday brochure"> holiday brochure</a>
+
+          </p>
+      <br>
+      <br>
+      <hr>
+      <!-- this is my list of social events -->
+      <div span="4">
+       <h1>Social Events</h1>
+     
+      <p>For more information of any of the following you can contact our social sec Jane by phone on either 0151 6084575 or 07963 906979, or email via <a href="mailto:jane.croft1@ntlworld.com" title="Email Jane Croft">jane.croft1@ntlworld.com</a></p>
+      </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="span6">
+          <h3>Walk to Hilbre Island - Sat 13 August, 1.00pm by the ice cream shop next to the beach in West Kirby to start walking at 1.30pm</h3>
+          <p>We aim to return by 4.30pm and then if anyone is interested in a meal at Surfers they do a teatime special of 2 courses £11.95 or 3 courses £13.50. Please let me know ASAP if they want to go for the meal. If weather is bad we plan to meet at 1.00 & just go for lunchtime special (£9.95 for 2 courses and a drink).
+        
+        </p>
+          
+        </div>
+
+          <div class="span6">
+          <h3>Club AGM, Oval Sports Centre - Sunday 15th July, at 5.00pm</h3>
+          <p>Would you like your say on how your ski club is run; have you any suggestions or questions relating to the skiing sessions, training, teaching, holidays, racing or social events? Well this is your big chance. The Oval Ski Club's AGM is taking place on the 15th July at the Oval Sports Centre Meeting room (within the sports centre) at 5pm.<br>
+          If that was not incentive enough the club will be providing free refreshments!!! (drinks and nibbles)<br><br>
+
+          Remember the club is run entirely by volunteers without whom none of the above activities would take place, further volunteers are very much in demand, so if you can spare a few hours making drinks on a Saturday morning or would like to be Chairman (or any of the jobs in between) - any new volunteers would be extremely welcome.<br><br>
+
+          All committee posts will be up for election.<br><br>
+
+          If you interested in attending or would like more information please contact Jane by either phone or email (details at the top of the page).
+        </div>
+     </p>
+     <br>
+     <br>
+     <div class="row">
+        <div class="span6">
+          <h3>Yellow Duckmarine Sunday 18th November 2012 - 11.30am – Albert Dock, Liverpool</h3>
+          <p>All aboard for an exclusive tour of Liverpool’s historic sights and
+             Docks on a World War II  amphibious landing craft. The tour, including
+             ‘splash down’ into the Albert Dock takes approximately 1 hour with
+             live commentary throughout. Adults £10, Children (15 and under) £8.     
+        </p>
+          
+        </div>
+
+          <div class="span6">
+          <h3>GETTING NAILED Wednesday 23rd January 2013 5.00pm – 8pm</h3>
+          <p>Exclusive beauty consultants, Caroline & Co in Allport Road,
+             Bromborough are hosting a Nails Evening exclusively for the Oval Ski
+             Club. Tickets are £10 which will include a choice of either hands or
+             feet treatment, wine/soft drinks & nibbles. Don't worry if you can't
+             make it at 5.00, just turn up when you can.
+
+            </p>
+          </div>
+          
+        </div>
+      
+      </div>
+           
+
+      <!-- Example row of columns -->
+               
+        </div>
+      
+      </div>
+
+      <!-- Breadcrumbs for page management -->
+      <ul class="breadcrumb">
+          <li><a href="index.html" title="Return to Home Page">Home</a> <span class="divider">/</span></li>
+          <li class="active">Social Events</li>
+      </ul>
+
+      <hr>
+
+       <!-- this places a footer at the bottom of the page, it contains the "Copyright" and the Connect to facebook link -->
+       <footer>
+       <p>&copy; Oval Ski Club 2012 &nbsp<center><i class="icon-thumbs-up"></i><a href="http://www.facebook.com/group.php?gid=2256597544">Find and Like us on Facebook!</center></a></p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- added new jquery files to allow for JS actions -->
+    <!-- this code initiates my carousel to rotate through images automatically every 4 seconds -->
+     <script text/javascript src="../assets/jquery-1.8.2.min.js"></script>
+    <script text/javascript src="../assets/bootstrap.min.js"></script>
+    <script text/javascript src="assets/js/jquery-1.8.2.min.js"></script>
+    <script text/javascript src="assets/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.carousel').carousel({
+          interval: 4000
+        });
+      });
+    </script>
+<script>
+   $(function(){
+      $('.dropdown-toggle').dropdown();
+    $('.dropdown input, .dropdown label').click(function (e) {
+        e.stopPropagation();
+      });
+  });
+   </script>
+
+<%= yield %>
+
+     
+ 
+
+  </body>
+</html>
+
+
+

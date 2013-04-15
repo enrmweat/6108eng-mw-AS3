@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Oval Ski Club | About</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+<!-- this imports my custom css file and sets the padding of the body section -->
+    <link href="app/assets/stylesheets/mycustomcss.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <!-- this includes the responsive bootstrap styles to allow the website to scale accordingly to screen size -->
+    <link href="app/assets/stylesheets/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="icon" type="image/ico" href="assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+      <!-- this is my code for the navbar it contains all the links and information needed to navigate through the page -->
+       <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="../welcome/index.html" title="Return to Home Page">Oval Ski Club</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="../welcome/index.html" accesskey="h" title="Home Page"><i class="icon-home icon-inversed"></i> <em>H</em>ome</a></li>
+              <li class="active"><a href="../welcome/about" accesskey="a" title="About us"><em>A</em>bout</a></li>
+                 <!--<li><a href="contact.html" accesskey="1" title="Contact Us" >Get In Touch!</a></li> -->
+              <li><a href="../newevents" title="Social Events & Club Holidays" accesskey="s">Get <em>S</em>ocial!</a></li>
+             
+             </li>
+               <li class="dropdown">
+                <a  href="#" class="dropdown-toggle" data-toggle="dropdown" accesskey="i" title="FAQ & Information">FAQ & <em>I</em>nformation <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="../welcome/faq" title="FAQ Page" accesskey="q" >FA<em>Q</em>s</a></li>
+                  <li><a href="../welcome/clubsessions" title="Information on the sessions we run!" accesskey="c"><em>C</em>lub Sessions</a></li>
+                  <li><a href="../welcome/racingteam" title="Our superb racing team!" accesskey="o"><em>O</em>ur Racing Team</a></li>
+                  <li class="divider"></li>
+                  <li><a href="../welcome/accesskeyinfo" title="Information on how to use access keys" accesskey="l"><em>L</em>ist of Access Keys</a></li>
+                  </ul>
+            </ul>
+            <!-- this displays the sign in sction on the right hand side of the navbar -->
+          <ul class="nav pull-right">
+          <li class="divider-vertical"></li>
+          <li><a href="../login" title="Login"accesskey="l"><em>L</em>ogin</a></li>
+         
+            
+           <li><a href="../authors/new" title="Resgister"accesskey="r"><em>R</em>egister</a></li>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <div class="container">
+        <!-- Main hero unit for a primary marketing message or call to action -->
+          <div class="container">
+        <div class="page-header">
+          <h1>About Us</h1>
+          <hr>
+        </div>
+        <h5>We are all volunteers! and are involved in the Oval Ski Club because of our interest in the sport.</h5>
+
+
+      <!-- Header Section of page -->
+      <div class="row">
+        <div class="span8">
+          <h2>The Ski Club Team</h2>
+          <p>The club has an elected committee and several qualified instructors. However we also require additional helpers to make the club a success. If you are interested in helping out with the club on either a Saturday morning or Sunday evening then please contact one of the committee members or instructors (see below).</a> </p>
+          
+        </div>
+        <div class="span6">
+          <h2>The Committee</h2>
+         
+             <!-- creates my hover style table -->
+          <table class="table table-hover" title="Members of Oval Ski Club Committee">
+
+          <tr>
+          <th>Position</th>
+          
+          <th>Name</th>
+         </tr>
+
+          <tr>
+            <td>President</td>
+            <td>John Croft</td>
+            </tr>
+          <tr>
+            <td>Chairman</td>
+            <td>John Wahlers</td>
+            </tr>
+          <tr>
+            <td>Vice Chairman</td>
+            <td>Andrew Kearney (PD)</td>
+            </tr>
+          <tr>
+            <td>Secretary</td>
+            <td>Lorna McCarthy</td>
+            </tr>
+          <tr>
+            <td>Treasurer</td>
+            <td>Mark Croft</td>
+            </tr>
+          <tr>
+            <td>Race Secretary</td>
+            <td>Tony McClave</td>
+            </tr>
+          <tr>
+            <td>Social Secretary</td>
+            <td>Jane Croft</td>
+            </tr>
+          <tr>
+            <td>Training Officer</td>
+            <td>Nick Spearpoint</td>
+            </tr>
+          <tr>
+            <td>Junior Rep</td>
+            <td>tbc</td>
+            </tr>
+          <tr>
+            <td>Child Protection Officer</td>
+            <td>Mel Wahlers</td>
+            </tr>
+          <tr>
+            <td>Committee Member</td>
+            <td>Jenny Montague</td>
+            </tr>
+          <tr>
+            <td>Committee Member</td>
+            <td>Robert Coull (Bob)</td>
+            </tr>
+          <tr>
+            <td>Committee Member</td>
+            <td>  Nissa Coull</td>
+            </tr>
+          <tr>
+            <td>Committee Member</td>
+            <td>  Philippa Watts</td>
+            </tr>
+          <tr>
+            <td>Committee Member</td>
+            <td>  Ken Needham</td>
+            </tr>
+
+
+      </table>
+      
+      </p>
+
+       </div>
+        <div class="span6">
+
+          <h2>Instructors</h2>
+        
+          <p><table class="table table-hover" title="Instructors at Oval Ski Club">
+          <tr>
+            <td>Philippa Watts</td>
+            </p>
+          </tr>
+          <tr>
+            <td>PAndrew Kearney (PD)</td>
+            </p>
+          </tr>
+          <tr>
+            <td>Andrew Dawson (Andy)</td>
+            </p>
+          </tr>
+          <tr>
+            <td>Dave Sejrup</td>
+            </p>
+          </tr>
+          <tr>
+            <td>John Rogers</td>
+            </p>
+          </tr>
+          <tr>
+            <td>John Wahlers</td>
+            </p>
+          </tr>
+          <tr>
+            <td>Mel Wahlers</td>
+            </p>
+          </tr>
+          <tr>
+            <td>Bob Coull</td>
+            </p>
+          </tr>
+          <tr>
+            <td>Nissa Coull</td>
+            </p>
+          </tr>
+          <tr>
+            <td>Tony McClave</td>
+            </p>
+          </tr>
+          <tr>
+            <td>Nick Spearpoint</td>
+            </p>
+          </tr>
+          <tr>
+            <td>Barry Forrester</td>
+            </p>
+          </tr>
+          </table>  
+          
+        </div>
+      </div>
+
+         <div class="container">
+
+      <h1>Don't be afraid to get in touch!</h1>
+      <hr>
+    </div>
+    
+      <!-- Contact Information Document -->      
+          
+        </div>
+            <div class="row">
+        <div class="span6">
+          <h2>Contact by Telephone:</h2>
+          <p><p>Phone: John Wahlers (Chairman): 0151 645 2452<br>
+                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Belinda Dawson (Secretary): 0151 342 9756<br>
+        </div>
+        <div class="span6">
+          <h2>Contact by Email:</h2>
+          <p>Email - All enquiries: <a href="mailto:SkiEnquiries@OvalSkiClub.com" title="Email Oval Ski Club">SkiEnquiries@OvalSkiClub.com</a></p>
+       </div>
+       
+      </div>
+             
+
+      </div><!-- .span -->
+    </div><!-- .row -->
+
+
+    <div class="container">  
+    <center><h4>Our Location</h4>
+    <!--Google Map Widget -->
+    <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=oval+sports+centre&amp;aq=&amp;sll=53.356766,-3.011201&amp;sspn=0.010604,0.032637&amp;t=w&amp;ie=UTF8&amp;hq=oval+sports+centre&amp;hnear=&amp;ll=53.356766,-3.011201&amp;spn=0.010604,0.032637&amp;output=embed"></iframe><br /><small><a href="https://maps.google.co.uk/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=oval+sports+centre&amp;aq=&amp;sll=53.356766,-3.011201&amp;sspn=0.010604,0.032637&amp;t=w&amp;ie=UTF8&amp;hq=oval+sports+centre&amp;hnear=&amp;ll=53.356766,-3.011201&amp;spn=0.010604,0.032637" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+
+      <!-- Breadcrumbs for page management -->
+      <ul class="breadcrumb">
+          <li><a href="index.html" title="Return to Home Page">Home</a> <span class="divider">/</span></li>
+          <li class="active">About</li>
+      </ul>
+
+  
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+   <script text/javascript src="../assets/jquery-1.8.2.min.js"></script>
+    <script text/javascript src="../assets/bootstrap.min.js"></script>
+    <script text/javascript src="assets/js/jquery-1.8.2.min.js"></script>
+    <script text/javascript src="assets/js/bootstrap.min.js"></script>
+<script>
+   $(function(){
+      $('.dropdown-toggle').dropdown();
+    $('.dropdown input, .dropdown label').click(function (e) {
+        e.stopPropagation();
+      });
+  });
+   </script>
+
+<%= yield %>
+
+</body>
+</html>

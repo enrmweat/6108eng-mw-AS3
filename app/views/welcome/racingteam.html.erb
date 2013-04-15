@@ -1,0 +1,176 @@
+  <!DOCTYPE html>
+<html>
+<head>
+  <title>Oval Ski Club | Racing Team</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+<!-- this imports my custom css file and sets the padding of the body section -->
+    <link href="app/assets/stylesheets/mycustomcss.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <!-- this includes the responsive bootstrap styles to allow the website to scale accordingly to screen size -->
+    <link href="app/assets/stylesheets/bootstrap-responsive.css" rel="stylesheet">
+    <!-- Le fav and touch icons -->
+    <link rel="icon" type="image/ico" href="assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+ <!-- this is my code for the navbar it contains all the links and information needed to navigate through the page -->
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.html" title="Return to Home Page">Oval Ski Club</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="index.html" title="Home Page" accesskey="h"> <i class="icon-home icon-inverse"></i> <em>H</em>ome</a></li>
+              <li><a href="about.html" title="About Us" accesskey="a"><em>A</em>bout</a></li>
+            <!--<li><a href="contact.html" accesskey="1" title="Contact Us" >Get In Touch!</a></li> -->
+              <li><a href="../newevents" title="Social Events & Club Holiday" accesskey="s">Get <em>S</em>ocial!</a></li>
+              </li>
+               <li class="dropdown">
+                <a  href="#" class="dropdown-toggle" data-toggle="dropdown" accesskey="i" title="FAQ & Information">FAQ & <em>I</em>nformation <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="faq.html" title="FAQ Page" accesskey="q" >FA<em>Q</em>s</a></li>
+                  <li><a href="clubsessions.html" title="Information about the sessions we run!" accesskey="c"><em>C</em>lub Sessions</a></li>
+                  <li class="active"><a  href="racingteam.html" title="Our superb racing team!" accesskey="o"><em>O</em>ur Racing Team</a></li>
+                  <li class="divider"></li>
+                  <li><a href="accesskeyinfo.html" title="Information on how to use access keys" accesskey="l"><em>L</em>ist of Access Keys</a></li>
+                  </ul>
+            </ul>
+            <ul class="nav pull-right">
+          <li class="divider-vertical"></li>
+          <li><a href="../login" title="Login"accesskey="l"><em>L</em>ogin</a></li>
+         
+            
+          <li><a href="../authors/new" title="Resgister"accesskey="r"><em>R</em>egister</a></li>
+           
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+         
+      <div>
+        <!-- this inserts the image at the top of the page -->
+      <img src="../assets/race.jpg" width="1280" height="480" title="Going for Gold!" >
+    </div>
+
+
+
+        <div class="container">
+    <div class="page-header">
+      <h1>Oval Racing Team</h1>
+      <hr>
+    </div>
+    <p>Tony McClave, your race secretary works tirelessly behind the scenes to make the winter and summer racing possible. Tony can be seen down at the club for more information</p>
+
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="span12">
+          <h4>The races we enter...</h4>
+          <p>We have members who race in the National league at various ski slopes across the country . 
+            We also organise teams to race at Stoke (in the summer), Sheffield (in the winter) and Pendle (also in the winter). Details for these local races can be found below.
+          </p>
+          
+        </div>
+          <!-- this is the main section of the page, contains paragraphs and bullet lists -->
+          <div class="span12">
+          <h4>Frostbite 7 (Sheffield - Run by Sharks Ski Club)</h4>
+           <p>"Fun racing in a friendly enviroment.  All Skiers welcome, including parents."
+            A new Frostbite series is nearly upon us so it's time to put the dates in the diary and get your entries in!</p>
+            <p>
+            Saturday 15th October 2011<br/>
+            Saturday 12th November 2011<br/>
+            Saturday 10th December 2011<br/>
+            Saturday 14th January 2012<br/>
+            Saturday 17th March 2012<br/>
+            </p>
+            <p>Cost: £12 per race (£15 if entry received on the Friday before the race or on race day.)</p>
+            <p>We are offering online entry applications this year and this is our preferred method so please try to use it!  You will be able to pay via paypal or credit/debit card.  You can sign up for one race at a time or all 5 in one go, or any combination in between.</p>
+
+          <br/>
+              <h2>Pendle Winter Race League 2011-2012</h2>
+              
+              <p>Yes its that time of year again. We are again inviting entries to our Winter Race League held on the 1st Saturday of Oct, Nov. Dec., Feb and March. All club members welcome!</p>
+              <p>
+              Saturday October 1st 2011<br/>
+              Saturday November 5th 2011<br/>
+              Saturday December 3rd 2011<br/>
+              Saturday February 4th 2012<br/>
+              Saturday March 3rd 2012<br/>
+              </p>
+              <p>Email entries to <a href="mailto:pendleskiraces@live.co.uk">pendleskiraces@live.co.uk</a></p>
+              
+              Race details in summary...<br/>
+              <ul>
+              <li>Cost - £8 per racer per race. £3 for ski and/or boot hire NOTE the skis we hire are recreational skis not race skis</li>
+              <li>Teams of 3 or 4. Skiers need to be able to competently ski from the top of our slope and get round gates. This race is designed as an introduction to racing. </li>
+              <li>Age categories. Under 10 (born after October 1st 2001), Under 13 (born after October 1st 1998), Under 19 (born after October 1st 1992), Under 99 any age!</li>
+              <li>You may ski up an age category but not down e.g. a 12 year old could ski in the U19s.</li>
+              <li>Teams can be all girls, all boys or mixed.</li>
+              <li>Each team needs a team captain who will where the bib for their team and be responsible for getting their team to the start ready for their race. The teams do not need to have the same racers in each month but the team name will stay the same. A club can have as many teams as they want and we appreciate some teams may not race every month</li>
+              <li>Race office opens at 8am. Collect team bibs and rented kit after you have paid. Open practice 8.15 to 9.10. Racing begins at 9.20 and finishes before 12 noon (we have to clear the slope for 12 as there are lessons on)</li>
+              <li>Each team will have 6 races against other teams in their age category. </li>
+              <li>4 points for a win, 2 points for completing the course successfully. So if a team of 4 races a team of 3 the 4th racer must complete the course.</li>
+              <li>Medals awarded to the first 3 teams in each age category on each race day. Overall the best 4 results to count towards the perpetual shields awarded in March.</li>
+              <li>IMPORTANT entries must be in by midnight the Thursday before the race. If a team subsequently pulls out then the planned race will go ahead, the remaining team must complete the course to win.</li>
+              <li>The BBQ will be running as usual and the snack bar for drinks and sweets.</li>
+              </ul>
+              </div>
+              <div>
+              <h2>&nbsp &nbsp&nbspDo you want to race?</h2>
+              &nbsp &nbsp&nbsp &nbspAll members of the ski club are eligible to race.<br />
+              &nbsp &nbsp&nbsp&nbsp It's a great way to improve your skiing so if you are interested in racing then contact Tony, or any member of the team, who will provide you with the information you need.</div>
+
+
+
+
+
+
+        </div>
+      
+      </div>
+
+      <ul class="breadcrumb">
+          <li><a href="index.html" title="Return to Home Page">Home</a> <span class="divider">/</span></li>
+          <li class="disabled"><a href="faq.html">FAQ & Information</a> <span class="divider">/</span></li>
+          <li class="disabled"><a href="clubsessions.html">FAQ & Information</a> <span class="divider">/</span></li>
+          <li class="active">Racing Team</li>
+      </ul>
+
+      
+    </div> <!-- /container -->
+
+       <script text/javascript src="../assets/jquery-1.8.2.min.js"></script>
+    <script text/javascript src="../assets/bootstrap.min.js"></script>
+    <script text/javascript src="assets/js/jquery-1.8.2.min.js"></script>
+    <script text/javascript src="assets/js/bootstrap.min.js"></script>
+<script>
+   $(function(){
+      $('.dropdown-toggle').dropdown();
+    $('.dropdown input, .dropdown label').click(function (e) {
+        e.stopPropagation();
+      });
+  });
+   </script>
+
+<%= yield %>
+
+</body>
+</html>

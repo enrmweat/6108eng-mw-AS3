@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Oval Ski Club | FAQ</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+<!-- this imports my custom css file and sets the padding of the body section -->
+    <link href="app/assets/stylesheets/mycustomcss.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <!-- this includes the responsive bootstrap styles to allow the website to scale accordingly to screen size -->
+    <link href="app/assets/stylesheets/bootstrap-responsive.css" rel="stylesheet">
+
+        <!-- Le fav and touch icons -->
+    <link rel="icon" type="image/ico" href="assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+ <!-- this is my code for the navbar it contains all the links and information needed to navigate through the page -->
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.html" title="Return to Home Page">Oval Ski Club</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="index.html" title="Home Page" accesskey="h"> <i class="icon-home icon-inverse"></i> <em>H</em>ome</a></li>
+              <li><a href="about.html" title="About Us" accesskey="a"><em>A</em>bout</a></li>
+            <!--<li><a href="contact.html" accesskey="1" title="Contact Us" >Get In Touch!</a></li> -->
+              <li><a href="../newevents" title="Social Events & Club Holiday" accesskey="s">Get <em>S</em>ocial!</a></li>
+            
+                           
+                
+              </li>
+               <li class="dropdown">
+                <a  href="#" class="dropdown-toggle" data-toggle="dropdown" accesskey="i" title="FAQ & Information">FAQ & <em>I</em>nformation <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li class="active"><a  href="faq.html" title="FAQ Page" accesskey="q" >FA<em>Q</em>s</a></li>
+                  <li><a href="clubsessions.html" title="Information about the sessions we run!" accesskey="c"><em>C</em>lub Sessions</a></li>
+                  <li><a href="racingteam.html" title="Our superb racing team!" accesskey="o"><em>O</em>ur Racing Team</a></li>
+                  <li class="divider"></li>
+                  <li><a href="accesskeyinfo.html" title="Information on how to use access keys" accesskey="l"><em>L</em>ist of Access Keys</a></li>
+                  </ul>
+            </ul>
+            <ul class="nav pull-right">
+          <li class="divider-vertical"></li>
+          <li><a href="../login" title="Login"accesskey="l"><em>L</em>ogin</a></li>
+               
+           <li><a href="../authors/new" title="Resgister"accesskey="r"><em>R</em>egister</a></li>
+   
+           
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+
+      <br>
+      <br>
+
+        <!-- this is my section of FAQs, to add a bit of colour to the page and to make them stand out i have used the "alert class"-->
+        <div class="container">
+    <div class="page-header">
+      <h1>Frequently Asked Questions</h1>
+      <hr>
+    </div>
+    <div class="alert alert-warning">
+    <p>If you can't find the answer to your question below then please email us and we'll do our best to get an answer to you. If it's a popular question then we will add it to the list below!</p>
+    </div>
+
+      <!-- Example row of columns -->
+      <div class="alert alert-info span1.5">
+        
+       <p><b>How can I learn how to ski? </p></b>
+      </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+      <div class="alert alert-success span8">
+          <p>We welcome all levels of skiers to join our club. If you are a complete beginner then we run lessons, in blocks of three weeks, during the ski season that you are welcome to attend once you have joined the club. Check the club sessions page for details of the next start date. You may want to arrive 10-15 minutes early to get your skis and boots sorted out.</p>
+          
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="alert alert-info span1.5">
+        
+       <p><b>What do I need to wear?</p></b>
+      </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+      <div class="alert alert-success span8">
+          <p>You need to wear gloves and long socks (if you haven’t got ski socks then a pair of football socks will do in the short term). Also your arms need to be covered. We provide lessons in all weather so be prepared to be out in the cold and wet!</p>
+          
+        </div>
+
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="alert alert-info span1.5">
+        
+       <p><b>How early do I need to arrive?</p></b>
+      </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+      <div class="alert alert-success span8">
+          <p>Please arrive at least 15 minutes before your lesson time. This gives you plenty of time to get your skis and boots sorted out, and discuss any issues you may have with the instructors.</p>
+          
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="alert alert-info span1.5">
+        
+       <p><b>What happens after the block of 3 beginners lessons?</p></b>
+      </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+      <div class="alert alert-success span8">
+          <p>You can continue to ski at the club for as long as you want. For instruction you will be moved to one of the intermediate groups and then after that… who knows!
+            We can instruct you up to racing level.</p>
+          
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="alert alert-info span1.5">
+        
+       <p><b>Where are you?</p></b>
+      </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+      <div class="alert alert-success span8">
+          <p>We are based at the Oval Sports Centre in Bebington. See the <a href="contact.html" title="Our Location"> contact us </a> page for more details on how to get there.</p>
+          
+        </div>
+
+           <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="alert alert-info span1.5">
+        
+       <p><b>When are you open?</p></b>
+      </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="alert alert-success span8">
+          <p>From September – June (May for the adults). For juniors on a Saturday morning between 10.00am and 1.00pm (10.00am for 5+ to under 11’s and 11.30am for 11+). 
+            For adults on a Sunday evening 5.00pm – 8.00pm. See the <a href="clubsessions.html" title="Opening Times"> club sessions</a> page for more details.</p>
+          
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="alert alert-info span1.5">
+        
+       <p><b>How much does it cost?</p></b>
+      </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="alert alert-success span8">
+          <p>The cost is £5.00 per session. We offer a discount if you use your own equipment and only charge £2.00
+             Annual membership is also required and you can join the first time you ski at the club – See the <a href="clubsessions.html" title="Opening Times"> club sessions</a> page for more details.</p>
+          
+        </div>
+          <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="alert alert-info span1.5">
+        
+       <p><b>Do you provide skis and boots for hire?</p></b>
+      </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="alert alert-success span8">
+          <p>Yes, we have a full range of carver skis and boots for use, which is included in the price.</p>
+          
+        </div>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="alert alert-info span1.5">
+        
+       <p><b>Can I ski with my kids?</p></b>
+      </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="alert alert-success span8">
+          <p>We provide family ski sessions, about once a month during the Sunday evening session. All skiers must be able to turn and stop safely to ski during these sessions. The dates are advertised in the ski hut on the notice board.
+            However there will be no instruction during these sessions.</p>
+          
+        </div>
+   <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="alert alert-info span1.5">
+        
+       <p><b>Can I race for the ski club?</p></b>
+      </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="alert alert-success span8">
+          <p>Yes! – We organize teams for the Summer Race League at Stoke, for all age categories, and during the winter at Pendle, for juniors and Sheffield for all age categories. This provides a great way to improve you skiing skills and have lots of fun. See our racing page for more details</p>
+          
+        </div>
+         <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="alert alert-info span1.5">
+        
+       <p><b>Can I get more involved in the club?</p></b>
+      </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="alert alert-success span8">
+          <p>Yes – We are always on the look out for volunteers to help behind the desk, for social activites and to become ski instructors. Full training on binding fitting will be provided to all helpers and training will be given to become qualified as an instructor.</p>
+          
+        </div>
+           <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="alert alert-info span1.5">
+        
+       <p><b>Do you offer boarding lessons?</p></b>
+      </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="alert alert-success span8">
+          <p>Sorry, but we no longer provide snowboarding lessons as we don’t have any qualified instructors. The nearest slope to provide snowboarding lessons is Runcorn Ski Centre.</p>
+          
+        </div>
+
+      </div>
+
+      <!-- Breadcrumbs for page management -->
+      <ul class="breadcrumb">
+          <li><a href="index.html" title="Return to Home Page">Home</a> <span class="divider">/</span></li>
+          <li class="disabled"><a href="#">FAQ & Information</a> <span class="divider">/</span></li>
+          <li class="active">FAQ</li>
+      </ul>
+
+      
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- added new jquery files to allow for JS actions -->
+      <script text/javascript src="../assets/jquery-1.8.2.min.js"></script>
+    <script text/javascript src="../assets/bootstrap.min.js"></script>
+    <script text/javascript src="assets/js/jquery-1.8.2.min.js"></script>
+    <script text/javascript src="assets/js/bootstrap.min.js"></script>
+<script>
+   $(function(){
+      $('.dropdown-toggle').dropdown();
+    $('.dropdown input, .dropdown label').click(function (e) {
+        e.stopPropagation();
+      });
+  });
+   </script>
+
+<%= yield %>
+
+
+     
+ 
+
+  </body>
+</html>
