@@ -307,4 +307,4 @@ AJAX Implementation
     I have encluded one Ajax enhancement on the webpage and it is located on the "Get Social" page, this enhancement takes the static events that where present previously and makes them dynamic, it displays the titles of the events and for the users to see further information they must click on the title for an slide animation to be displayed. This can also be done to hide the information.
 
 Testing
-    These tests can be found under "Test/Functional"
+    These tests can be found under "Test/Functional".
