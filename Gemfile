@@ -30,13 +30,22 @@ gem "authlogic", "~> 3.2.0"
 
 gem 'sorcery'
 
+gem 'omniauth-facebook'
+
+gem 'sunspot_rails'
+gem 'sunspot_solr'
+
+gem 'paperclip'
+
+gem 'flickr-fu'
+
 
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
 # To use Jbuilder templates for JSON
-# gem 'jbuilder'
+ gem 'jbuilder'
 
 # Use unicorn as the app server
 # gem 'unicorn'

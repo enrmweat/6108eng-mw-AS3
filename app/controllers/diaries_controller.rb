@@ -7,6 +7,13 @@ class DiariesController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @diaries }
+       format.xml { render xml: @diaries }
+       
+
+ @search = Diary.search do
+    fulltext params[:search]
+  end
+  @diaries = @search.results
     end
   end
 
@@ -15,11 +22,7 @@ class DiariesController < ApplicationController
   def show
     @diary = Diary.find(params[:id])
 
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @diary }
-    end
-  end
+ end
 
   # GET /diaries/new
   # GET /diaries/new.json

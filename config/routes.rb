@@ -1,8 +1,6 @@
 Assignment2::Application.routes.draw do
   
-  get "author_sessions/new"
-
-  get "author_sessions/create"
+ 
 
   devise_for :admins
 
@@ -29,6 +27,8 @@ Assignment2::Application.routes.draw do
 
  get 'newevents/clubevents'
 
+ get 'authors/new'
+
  
 resources :newevents
 
@@ -37,7 +37,15 @@ resources :authors
 resources :author_sessions, 
 only: [ :new, :create, :destroy ]
 
+ get "author_sessions/new"
+
+  get "author_sessions/create"
+
 match 'login'  => 'author_sessions#new'
 match 'logout' => 'author_sessions#destroy'
+
+match 'auth/:provider/callback', to: 'sessions#create'
+match 'auth/failure', to: redirect('/')
+match 'signout', to: 'author_sessions#destroy', as: 'signout'
 
 end

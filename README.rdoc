@@ -280,3 +280,31 @@ Database
     The "Get social" page on the website contains the database for the diary entries and the new events entries.
     Both of these pages display what is currently stored in the database and both pages allow for the creation of
     new entries to be added, edited and deleted.
+
+Sunspot Search
+    This search has been implimented using the Sunsport with Solr Gem, it requires the command "rake sunspot:solr:start" to be ran when loading the application or the
+    search function will not respond and the application pages to which it is present on will cease to function, this is one problem with the Sunspot Solr search but I
+    used it as it seemed to be the easiest to implement into the Application.
+
+XML/JSON Feeds
+    These two APIs have been used on the Diaries page to give an extra feed of the diary events that are up and coming in the future. They where implemented by using the Jbuilder gem and the inbuilt XML reader respectivly.
+
+Galleria (Jquery)
+    This gallery was a JQuery for free on the internet, I decided to use this gallery as it provided enough functionality for my needs and also came with an plugin that allowed a flickr gallery to be parsed and displayed through this gallery.
+
+Sorcery Authentication
+    This was used to create my own custom login feature for the website, it allows users to sign up and register with their own unique IDs, Emails, Passwords etc.
+
+Facebook Authentication
+    An option to sign in via Facebook is also present on the website as this allows people to sign up with their existing facebook acounts instead of having to remember another
+    username and password. It uses the Omniauth with facebook gem and allows developers to create a facebook app to authorise and login to their websites with.
+
+Yahoo Weather RSS Feed
+    The weather RSS feed on this website is a free JQuery plugin that takes an RSS weather feed from theweatherchannel.com and outputs it to the webpage using a nice jquery
+    graphical representation, the widget automatically updates when the weather changes, and it can also be refreshed when the page is refreshed.
+
+AJAX Implementation
+    I have encluded one Ajax enhancement on the webpage and it is located on the "Get Social" page, this enhancement takes the static events that where present previously and makes them dynamic, it displays the titles of the events and for the users to see further information they must click on the title for an slide animation to be displayed. This can also be done to hide the information.
+
+Testing
+    These tests can be found under "Test/Functional"

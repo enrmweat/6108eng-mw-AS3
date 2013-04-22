@@ -47,7 +47,7 @@
               <li class="active"><a href="../welcome/index" accesskey="h" title="Home Page"><i class="icon-home icon-inverse"></i><em>H</em>ome</a></li>
               <li><a href="../welcome/about" accesskey="a" title="About us"><em>A</em>bout</a></li>
                <!--<li><a href="contact" accesskey="1" title="Contact Us" >Get In Touch!</a></li> -->
-              <li><a class="active" href="../newevents/clubevents" title="Social Events & Club Holiday" accesskey="s">Get <em>S</em>ocial!</a></li>
+              <li><a class="active" href="../newevents" title="Social Events & Club Holiday" accesskey="s">Get <em>S</em>ocial!</a></li>
             
               </li>
               <!-- this is my dropdown box within my navbar -->
@@ -68,12 +68,22 @@
           <li><a href="login" title="Login"accesskey="l"><em>L</em>ogin</a></li>
          
             
-          <li><a href="register" title="Resgister"accesskey="r"><em>R</em>egister</a></li>
+          <li><a href="../authors/new" title="Register"accesskey="r"><em>R</em>egister</a></li>
+           
 
           </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
+    <div align="right" id="user_nav">
+  <% if current_user %>
+    Signed in as <strong><%= current_user.name %></strong>!
+    <%= link_to "Sign out", signout_path, id: "sign_out" %>
+  <% else %>
+    <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
+
+  <% end %>
+</div>
 
    <div class="container">
            <p> <%= flash.notice %> </p>
@@ -99,7 +109,7 @@
       
      <h6>
         <% if logged_in? %>
-          <%= "Logged in as #{current_user.username}" %>
+          <%= "Logged in" %>
           <%= link_to "(logout)", logout_path %>
       <% else %>
         <%= link_to "(login)", login_path %>

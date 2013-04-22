@@ -14,14 +14,77 @@
         padding-bottom: 40px;
       }
     </style>
+    <style>
+    #galleria{ width: 1280px; height: 800px; background: #000 }
+    </style>
     <!-- this includes the responsive bootstrap styles to allow the website to scale accordingly to screen size -->
     <link href="app/assets/stylesheets/bootstrap-responsive.css" rel="stylesheet">
-
+      <style type="text/css"> 
+      #panel,#flip
+      {
+      padding:5px;
+      text-align:center;
+      /*background-color:#e5eecc;
+      border:solid 1px #c3c3c3;*/
+      }
+      #panel
+      {
+      padding:50px;
+      display:none;
+      }
+      </style>
+            <style type="text/css"> 
+      #panel2,#flip2
+      {
+      padding:5px;
+      text-align:center;
+      /*background-color:#e5eecc;
+      border:solid 1px #c3c3c3;*/
+      }
+      #panel2
+      {
+      padding:50px;
+      display:none;
+      }
+      </style>
+         </style>
+            <style type="text/css"> 
+      #panel3,#flip3
+      {
+      padding:5px;
+      text-align:center;
+      /*background-color:#e5eecc;
+      border:solid 1px #c3c3c3;*/
+      }
+      #panel3
+      {
+      padding:50px;
+      display:none;
+      }
+      </style>
+         </style>
+            <style type="text/css"> 
+      #panel4,#flip4
+      {
+      padding:5px;
+      text-align:center;
+      /*background-color:#e5eecc;
+      border:solid 1px #c3c3c3;*/
+      }
+      #panel4
+      {
+      padding:50px;
+      display:none;
+      }
+      </style>
     <!-- HTML5, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
+    <script src"../assets/galleria-1.2.9.min.js"></script>
+    <script src"../assets/jquery.phototag.1.2a(1).js"></script>
+    <script src"../assets/galleria.flickr.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <!-- favicon and icon images -->
     <link rel="icon" type="image/ico" href="assets/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
@@ -30,11 +93,42 @@
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
   </head>
 
-  <script type="text/javascript">
-$(document).ready(function () {
-  $('#weather').weatherfeed(['AUXX0075']);
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
 });
 </script>
+<script> 
+$(document).ready(function(){
+  $("#flip2").click(function(){
+    $("#panel2").slideToggle("slow");
+  });
+});
+</script>
+<script> 
+$(document).ready(function(){
+  $("#flip3").click(function(){
+    $("#panel3").slideToggle("slow");
+  });
+});
+</script>
+<script> 
+$(document).ready(function(){
+  $("#flip4").click(function(){
+    $("#panel4").slideToggle("slow");
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function () {
+  $('#weather').weatherfeed(['AUXX0075'], {
+    forecast: true
+  });
+});</script>
+
 
 
   <body>
@@ -73,7 +167,7 @@ $(document).ready(function () {
           <li><a href="../login" title="Login"accesskey="l"><em>L</em>ogin</a></li>
          
             
-           <li><a href="../authors/new" title="Resgister"accesskey="r"><em>R</em>egister</a></li>
+          <li><a href="../authors" title="Register"accesskey="r"><em>R</em>egister</a></li>
            
           </div><!--/.nav-collapse -->
         </div>
@@ -81,7 +175,11 @@ $(document).ready(function () {
     </div>
     
     <div class="container">
-    
+    <%= form_tag newevents_path, :method => :get do %>
+    <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %>
+  <% end %>
            
      
       
@@ -92,11 +190,17 @@ $(document).ready(function () {
         <h1>Club Holiday</h1>
       </div>
       <hr>
+      <center><div id="galleria">
+        <img src="../assets/stchristoph.jpg" data-title="St Christoph Resort">
+        <img src="../assets/stchristoph1.jpg" data-title="St Christoph Resort and Slopes">>
+        <img src="../assets/stchristoph2.jpg" data-title="St Christoph Ski Slope">> 
+      </div></center>
+      <br>
+      <br>
 <!--this is the code for my carousel -->
-<div id="this-carousel-id" class="carousel slide"><!-- class of slide for animation -->
-  <div class="carousel-inner">
+<!--  <div class="carousel-inner">
     <div class="item active"><!-- class of active since it's the first item -->
-      <img src="../assets/stchristoph.jpg" />
+      <!--<img src="../assets/stchristoph.jpg" />
       <div class="carousel-caption">
         <p>St Christoph/St Anton</p>
       </div>
@@ -122,7 +226,7 @@ $(document).ready(function () {
   </div><!-- /.carousel-inner -->
   <!--  Next and Previous controls below
         href values must reference the id for this carousel -->
-    <a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
+    <!--<a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
     <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
     </div><!-- /.
       <!-- end carousel -->
@@ -145,7 +249,7 @@ $(document).ready(function () {
 
           </p>
           <h3>Current Weather in St.Anton</h3>
-          <div id="weather"></div> 
+          <div id="weather"></div>
       <br>
       <br>
       <hr>
@@ -155,45 +259,50 @@ $(document).ready(function () {
      
       <p>For more information of any of the following you can contact our social sec Jane by phone on either 0151 6084575 or 07963 906979, or email via <a href="mailto:jane.croft1@ntlworld.com" title="Email Jane Croft">jane.croft1@ntlworld.com</a></p>
       </div>
-
+<div class="container"
       <!-- Example row of columns -->
       <div class="row">
         <div class="span6">
-          <h3>Walk to Hilbre Island - Sat 13 August, 1.00pm by the ice cream shop next to the beach in West Kirby to start walking at 1.30pm</h3>
-          <p>We aim to return by 4.30pm and then if anyone is interested in a meal at Surfers they do a teatime special of 2 courses £11.95 or 3 courses £13.50. Please let me know ASAP if they want to go for the meal. If weather is bad we plan to meet at 1.00 & just go for lunchtime special (£9.95 for 2 courses and a drink).
+          <h4><div id="flip">Walk to Hilbre Island - Sat 13 August, 1.00pm by the ice cream shop next to the beach in West Kirby to start walking at 1.30pm (Click to expand)</div></h4>
+          <div id="panel"><p>We aim to return by 4.30pm and then if anyone is interested in a meal at Surfers they do a teatime special of 2 courses £11.95 or 3 courses £13.50. Please let me know ASAP if they want to go for the meal. If weather is bad we plan to meet at 1.00 & just go for lunchtime special (£9.95 for 2 courses and a drink).
         
-        </p>
+        </p></div>
           
         </div>
 
           <div class="span6">
-          <h3>Club AGM, Oval Sports Centre - Sunday 15th July, at 5.00pm</h3>
-          <p>Would you like your say on how your ski club is run; have you any suggestions or questions relating to the skiing sessions, training, teaching, holidays, racing or social events? Well this is your big chance. The Oval Ski Club's AGM is taking place on the 15th July at the Oval Sports Centre Meeting room (within the sports centre) at 5pm.<br>
+          <h4><div id="flip2">Club AGM, Oval Sports Centre - Sunday 15th July, at 5.00pm (Click to Expand)</div></h4>
+          <div id="panel2"><p>Would you like your say on how your ski club is run; have you any suggestions or questions relating to the skiing sessions, training, teaching, holidays, racing or social events? Well this is your big chance. The Oval Ski Club's AGM is taking place on the 15th July at the Oval Sports Centre Meeting room (within the sports centre) at 5pm.<br>
           If that was not incentive enough the club will be providing free refreshments!!! (drinks and nibbles)<br><br>
 
           Remember the club is run entirely by volunteers without whom none of the above activities would take place, further volunteers are very much in demand, so if you can spare a few hours making drinks on a Saturday morning or would like to be Chairman (or any of the jobs in between) - any new volunteers would be extremely welcome.<br><br>
 
           All committee posts will be up for election.<br><br>
 
-          If you interested in attending or would like more information please contact Jane by either phone or email (details at the top of the page).
+          If you interested in attending or would like more information please contact Jane by either phone or email (details at the top of the page).</p>
+          </div>
         </div>
-     </p>
+     
+     <br>
+     <br>
      <br>
      <br>
      <div class="row">
         <div class="span6">
-          <h3>Yellow Duckmarine Sunday 18th November 2012 - 11.30am – Albert Dock, Liverpool</h3>
-          <p>All aboard for an exclusive tour of Liverpool’s historic sights and
+          <h4><div id="flip3">Yellow Duckmarine Sunday 18th November 2012 - 11.30am – Albert Dock, Liverpool (Click to expand)</div></h4>
+           <div id="panel3"><p>All aboard for an exclusive tour of Liverpool’s historic sights and
              Docks on a World War II  amphibious landing craft. The tour, including
              ‘splash down’ into the Albert Dock takes approximately 1 hour with
              live commentary throughout. Adults £10, Children (15 and under) £8.     
         </p>
           
         </div>
+      </div>
+
 
           <div class="span6">
-          <h3>GETTING NAILED Wednesday 23rd January 2013 5.00pm – 8pm</h3>
-          <p>Exclusive beauty consultants, Caroline & Co in Allport Road,
+          <h4><div id="flip4">GETTING NAILED Wednesday 23rd January 2013 5.00pm – 8pm (Click to expand)</div></h4>
+          <div id="panel4"><p>Exclusive beauty consultants, Caroline & Co in Allport Road,
              Bromborough are hosting a Nails Evening exclusively for the Oval Ski
              Club. Tickets are £10 which will include a choice of either hands or
              feet treatment, wine/soft drinks & nibbles. Don't worry if you can't
@@ -202,6 +311,8 @@ $(document).ready(function () {
 
             </p>
           </div> 
+        </div>
+      </div>
           <br>
           <div class="row">
             <div class="span12">
@@ -300,6 +411,19 @@ $(document).ready(function () {
   });
    </script>
       </script>
+
+<script>
+Galleria.loadTheme("<%= javascript_path('galleria.classic.js')%>");
+      var flickr = new Galleria.Flickr();
+      flickr.user('95127465@N07', function(data) {
+          Galleria.run('#galleria', {
+              dataSource: data
+          });
+      });
+
+
+</script>
+
 
   <script text/javascript src="../assets/jquery.zweatherfeed.min.js"</script>
 

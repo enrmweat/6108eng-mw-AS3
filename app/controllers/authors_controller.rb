@@ -1,7 +1,7 @@
 class AuthorsController < ApplicationController
   # GET /authors
   # GET /authors.json
-  before_filter :zero_authors_or_authenticated, only: [:new, :create]
+ 
   def index
     @authors = Author.all
 

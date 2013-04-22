@@ -2,7 +2,10 @@ class NeweventsController < ApplicationController
 
 def index
 	@newevents = Newevent.all
-
+@search = Newevent.search do
+    fulltext params[:search]
+  end
+  @newevents = @search.results
 end
 
 def show

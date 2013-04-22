@@ -6,9 +6,11 @@
 <dl class="dl-horizontal">
   <dt><strong><%= model_class.human_attribute_name(:Title) %>:</strong></dt>
   <dd><%= @diary.Title %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:Message) %>:</strong></dt>
-  <dd><%= @diary.Message %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:Body) %>:</strong></dt>
+  <dd><%= @diary.Body %></dd>
 </dl>
+
+<p><%= image_tag @diary.image.url %></p>
 
 <div class="form-actions">
   <%= link_to t('.back', :default => t("helpers.links.back")),
